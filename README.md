@@ -31,6 +31,28 @@ Angular has a large and active community, as well as a rich ecosystem of librari
 
 In summary, **Angular** is a powerful framework for building dynamic and modular web applications. It provides a structured approach to development, making it easier to create and maintain large-scale applications while offering features like two-way data binding, dependency injection, and a rich set of tools for testing and development.
 
+# TypeScript
+
+**TypeScript** is a programming language that is a superset of JavaScript, meaning that all valid JavaScript code is also valid TypeScript code. However, TypeScript extends JavaScript by adding static typing to the language. This allows developers to define types for variables, function parameters, and return types, which can help catch errors during development and provide better tooling support.
+
+Key features of TypeScript include:
+
+1. **Static Typing: TypeScript introduces a static type system, enabling developers to define types for variables, function parameters, and return values. This helps catch type-related errors during development and provides better code intelligence in integrated development environments (IDEs).
+
+2. **Interfaces: TypeScript supports the use of interfaces, allowing developers to define contracts for object shapes. This enhances code readability and maintainability by explicitly specifying the expected structure of objects.
+
+3. **Enums**: TypeScript includes support for enums (enumerations), making it easier to work with sets of named constants. This can improve code clarity by giving meaningful names to values.
+
+4. **Classes**: TypeScript supports the class-based object-oriented programming paradigm, which is a more structured and organized way to write code, especially for larger applications.
+
+5. **Modules**: TypeScript has a module system that helps organize code into separate files and namespaces, making it easier to manage and maintain large codebases.
+
+6. **Generics**: TypeScript allows the use of generics, enabling developers to write more reusable and flexible code by creating functions and classes that can work with a variety of data types.
+
+7. **Compile-time Checking**: TypeScript code is transpiled to JavaScript before execution, and during this process, the TypeScript compiler performs static type checking. This means that many potential errors can be caught at compile time rather than runtime.
+
+Developers often choose TypeScript for projects where a strong type system is desired to catch errors early in the development process, especially in larger codebases. TypeScript code can be compiled to JavaScript, making it compatible with existing JavaScript projects and allowing gradual adoption of TypeScript features.
+
 # Commands
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
