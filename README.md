@@ -37,9 +37,9 @@ In summary, **Angular** is a powerful framework for building dynamic and modular
 
 Key features of TypeScript include:
 
-1. **Static Typing: TypeScript introduces a static type system, enabling developers to define types for variables, function parameters, and return values. This helps catch type-related errors during development and provides better code intelligence in integrated development environments (IDEs).
+1. **Static Typing**: TypeScript introduces a static type system, enabling developers to define types for variables, function parameters, and return values. This helps catch type-related errors during development and provides better code intelligence in integrated development environments (IDEs).
 
-2. **Interfaces: TypeScript supports the use of interfaces, allowing developers to define contracts for object shapes. This enhances code readability and maintainability by explicitly specifying the expected structure of objects.
+2. **Interfaces**: TypeScript supports the use of interfaces, allowing developers to define contracts for object shapes. This enhances code readability and maintainability by explicitly specifying the expected structure of objects.
 
 3. **Enums**: TypeScript includes support for enums (enumerations), making it easier to work with sets of named constants. This can improve code clarity by giving meaningful names to values.
 
