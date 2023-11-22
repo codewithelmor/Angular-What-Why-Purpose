@@ -20,7 +20,7 @@ Angular follows the Model-View-ViewModel (MVVM) architecture, where the model re
 6. **`Cross-browser Compatibility`**:
 Angular takes care of many cross-browser compatibility issues, allowing developers to focus on building features rather than dealing with browser-specific quirks.
 
-7. **`Built-in Directives and Pipes**:
+7. **`Built-in Directives and Pipes`**:
 Angular provides a set of built-in directives and pipes that make it easy to manipulate the DOM, format data, and perform various operations within your templates.
 
 8. **`Testing`**:
@@ -37,7 +37,7 @@ In summary, **`Angular`** is a powerful framework for building dynamic and modul
 
 Key features of TypeScript include:
 
-1. **`Static Typing**: TypeScript introduces a static type system, enabling developers to define types for variables, function parameters, and return values. This helps catch type-related errors during development and provides better code intelligence in integrated development environments (IDEs).
+1. **`Static Typing`**: TypeScript introduces a static type system, enabling developers to define types for variables, function parameters, and return values. This helps catch type-related errors during development and provides better code intelligence in integrated development environments (IDEs).
 
 2. **`Interfaces`**: TypeScript supports the use of interfaces, allowing developers to define contracts for object shapes. This enhances code readability and maintainability by explicitly specifying the expected structure of objects.
 
