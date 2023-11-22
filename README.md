@@ -31,6 +31,102 @@ Angular has a large and active community, as well as a rich ecosystem of librari
 
 In summary, **`Angular`** is a powerful framework for building dynamic and modular web applications. It provides a structured approach to development, making it easier to create and maintain large-scale applications while offering features like two-way data binding, dependency injection, and a rich set of tools for testing and development.
 
+# Lifecycle Hooks
+
+Angular, a popular web application framework, provides a set of **`lifecycle hooks`** that allow you to tap into different phases of a component's lifecycle. These hooks enable you to perform actions at specific points in the life of a component, such as **`initialization`**, **`change detection`**, and **`destruction`**.
+
+Here is an overview of some of the key Angular lifecycle hooks:
+
+1. **`ngOnChanges`**:
+
+This hook is called when an input property of a component changes.
+It receives a **`SimpleChanges`** object that contains information about the changed properties.
+
+```typescript
+ngOnChanges(changes: SimpleChanges) {
+  // React to input property changes
+}
+```
+
+2. **`ngOnInit`**:
+
+* This hook is called once when the component is initialized.
+* It is commonly used for initialization logic, such as retrieving data from a service.
+
+```typescript
+ngOnInit() {
+  // Component initialization logic
+}
+```
+
+3. **`ngDoCheck`**:
+
+* This hook is called during every change detection cycle.
+* It allows you to implement custom change detection logic.
+
+```typescript
+ngDoCheck() {
+  // Custom change detection logic
+}
+```
+
+4. **`ngAfterContentInit`**:
+
+* This hook is called after Angular has projected external content into the component's view.
+* It is commonly used when a component needs to interact with content projected into it.
+
+```typescript
+ngAfterContentInit() {
+  // After content initialization logic
+}
+```
+
+5. **`ngAfterContentChecked`**:
+
+* This hook is called after Angular checks the content projected into the component.
+* It can be used for additional checks or actions after content initialization.
+
+```typescript
+ngAfterContentChecked() {
+  // After content checked logic
+}
+```
+
+6. **`ngAfterViewInit`**:
+
+* This hook is called after the component's view has been initialized.
+* It is often used for operations that require access to the component's view or its child views.
+
+```typescript
+ngAfterViewInit() {
+  // After view initialization logic
+}
+```
+
+7. **`ngAfterViewChecked`**:
+
+* This hook is called after Angular checks the component's view and child views.
+* It is used for additional checks or actions after view initialization.
+
+```typescript
+ngAfterViewChecked() {
+  // After view checked logic
+}
+```
+
+8. **`ngOnDestroy`**:
+
+* This hook is called just before the component is destroyed.
+* It is used for cleanup activities such as unsubscribing from observables to avoid memory leaks.
+
+```typescript
+ngOnDestroy() {
+  // Cleanup logic before component destruction
+}
+```
+
+By implementing these lifecycle hooks in your Angular components, you can control the behavior of your components at different stages of their lifecycle. This allows you to perform setup, update, and cleanup tasks as needed.
+
 # TypeScript
 
 **`TypeScript`** is a programming language that is a superset of JavaScript, meaning that all valid JavaScript code is also valid TypeScript code. However, TypeScript extends JavaScript by adding static typing to the language. This allows developers to define types for variables, function parameters, and return types, which can help catch errors during development and provide better tooling support.
