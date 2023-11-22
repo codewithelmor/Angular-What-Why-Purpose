@@ -149,6 +149,66 @@ Key features of TypeScript include:
 
 Developers often choose TypeScript for projects where a strong type system is desired to catch errors early in the development process, especially in larger codebases. TypeScript code can be compiled to JavaScript, making it compatible with existing JavaScript projects and allowing gradual adoption of TypeScript features.
 
+# Difference between TypeScript Constructor and Angular OnInit Lifecycle Hook
+
+In Angular, the **`constructor`** and **`ngOnInit`** are two different methods used in a component's lifecycle, and they serve different purposes.
+
+1. **`Constructor`**:
+
+* The **`constructor`** is a **`TypeScript feature`** and is part of the class itself rather than Angular's lifecycle hooks.
+* It is executed when an instance of the component is created.
+* It is primarily used for dependency injection and initialization of class-level properties.
+* It is not specific to Angular and is a standard part of the TypeScript class.
+
+Example:
+
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-example',
+  template: '<p>{{ message }}</p>'
+})
+export class ExampleComponent {
+  message: string;
+
+  constructor() {
+    this.message = 'Hello, world!';
+  }
+}
+```
+
+2. **`ngOnInit`**:
+
+**`ngOnInit`** is a **`lifecycle hook`** provided by Angular. It is part of the Angular component lifecycle and is called after the component has been initialized.
+It is commonly used for tasks that need to be performed after the component has been created, such as fetching data from a server or initializing properties that depend on input values.
+It is not responsible for creating the component, but rather for initializing it after Angular has created it.
+
+Example:
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-example',
+  template: '<p>{{ message }}</p>'
+})
+export class ExampleComponent implements OnInit {
+  message: string;
+
+  constructor() {
+    // Constructor code runs before ngOnInit
+  }
+
+  ngOnInit() {
+    // ngOnInit is called after the component has been initialized
+    this.message = 'Hello, world!';
+  }
+}
+```
+
+In summary, the **`constructor`** is a **`standard TypeScript feature`** used for basic setup and dependency injection, while **`ngOnInit`** is an **`Angular lifecycle hook`** specifically designed for more complex initialization tasks after the component has been created.
+
 # Commands
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
